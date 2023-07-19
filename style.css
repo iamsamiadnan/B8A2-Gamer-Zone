@@ -236,7 +236,7 @@ header {
     margin-bottom: 24px;
 }
 
-.play-right-content > p2 {
+.play-right-content > p {
     color: var(--text-color);
     font-size: 18px;
     font-weight: 400;
@@ -341,6 +341,7 @@ footer {
 
     font-weight: 500;
     text-decoration: none;
+    margin-right: 60px;
 }
 
 .copywrite-container > span {

@@ -1,0 +1,141 @@
+/* Header */
+
+:root {
+    --text-gradient: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    --primary-color: #FF42A5;
+    --secondary-color: #4EC5F7;
+    --text-color: #534C64;
+}
+
+* {
+    font-family: Work Sans;
+    margin: 0;
+    padding: 0;
+}
+
+.text-gradient {
+    font-size: 95px;
+    font-weight: 800;
+}
+
+.header-wrapper, .container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.header-container {
+    display: flex;
+    height: 700px;
+    align-items: center;
+}
+
+.header-container > div {
+    flex: 1;
+}
+
+.header-left-column > h1 {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.header-left-column > ul {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 41px;
+}
+
+.header-left-column > ul > li {
+    list-style: none;
+}
+
+.btn {
+    padding: 21px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 48px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+}
+
+.header-right-column > img {
+    width: 100%;
+}
+
+/* Cards */
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    column-gap: 24px;
+}
+
+.card-image-container {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.card > span {
+    color: var(--text-color);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+
+.card:hover .card-overlay {
+    visibility: visible;
+    cursor: pointer;
+    outline: 4px solid var(--primary-color);
+    border-radius: 16px;
+}
+
+.card-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.card-overlay-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.card-overlay-btn > img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+
+.card-overlay-btn > span {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+
+

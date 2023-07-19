@@ -137,5 +137,46 @@
     color: var(--primary-color);
 }
 
+/* Play Container */
+
+.play-container {
+    display: flex;
+    align-items: center;
+    gap: 249px;
+}
+
+.play-container > div {
+    flex: 1;
+}
+
+.play-image-container {
+    position: relative;
+}
+
+.small-image {
+    position: absolute;
+    top: 408px;
+    left: 528px;
+}
+
+.play-right-content {
+    max-width: 483px;
+}
+
+.play-right-content > h2 {
+
+    font-size: 48px;
+
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+
+.play-right-content > p2 {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; 
+} 
 
 

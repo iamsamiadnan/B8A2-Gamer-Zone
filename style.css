@@ -1,7 +1,7 @@
 /* Header */
 
 :root {
-    --text-gradient: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    --text-gradient: -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     --primary-color: #FF42A5;
     --secondary-color: #4EC5F7;
     --text-color: #534C64;
@@ -21,8 +21,14 @@ html, body {
 .text-gradient {
     font-size: 95px;
     font-weight: 800;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+header {
+    margin-bottom: 120px;
+}
 .header-wrapper, .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -39,6 +45,39 @@ html, body {
     flex: 1;
 }
 
+.only-text-gradient {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-header > span {
+    color: #534C64;
+    
+    font-size: 18px;
+
+    font-weight: 400;
+    line-height: 30px;
+    margin: 16px 0 48px 0;
+}
+.section-header {
+    color: #0B0223;
+
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+}
+.card-section {
+    margin-bottom: 120px;
+}
 .header-left-column > h1 {
     color: #0B0223;
     font-size: 48px;
@@ -56,8 +95,13 @@ html, body {
 
 .header-left-column > ul > li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
 }
-
+.header-left-column > ul > li > img {
+    margin-right: 12px;
+}
 .btn {
     padding: 21px 40px;
     color: #FFF;
@@ -65,6 +109,14 @@ html, body {
     font-weight: 600;
     border: 0;
     border-radius: 48px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.column-left__btn-group > button {
+    margin-right: 24px;
 }
 
 .btn-primary {
@@ -188,6 +240,9 @@ html, body {
     gap: 27px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 120px 0;
+
+   
 }
 .capsule {
     border-radius: 50px;
@@ -196,6 +251,7 @@ html, body {
     display: flex;
     align-items: center;
     max-width: max-content;
+  
 }
 
 .capsule:hover {
@@ -287,4 +343,78 @@ footer {
 
     font-weight: 500;
 
+}
+
+/* Nav Bar */
+
+nav {
+    padding: 38px 0 39px 0;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.g-color {
+    color: var(--primary-color);
+}
+.nav-container {
+    display: flex;
+  
+}
+
+
+
+.nav-container > div {
+    flex: 1;
+}
+
+.nav-btn-group {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-btn-group > li {
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 32px;
+}
+
+.logo-nav-container, .follow-btn-group {
+    display: flex;
+    align-items: center;
+}
+
+.follow-btn-group {
+    background-color: rgba(11, 2, 35, 0.10);
+    padding: 18px 24px;
+    border-radius: 8px;
+}
+.follow-btn-group > * {
+    margin-right: 24px;
+}
+
+.logo-nav-container > img {
+    width: 86.041px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.logo-nav-container > span {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.nav-btn-group-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 576px) {
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+    }   
 }

@@ -33,6 +33,13 @@ header {
     max-width: 1440px;
     margin: 0 auto;
 
+
+}
+
+.header-wrapper {
+    background: url("./images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .header-container {
